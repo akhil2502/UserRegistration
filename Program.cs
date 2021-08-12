@@ -6,7 +6,7 @@ namespace UserRegistration
     {
         static void Main(string[] args)
         {
-            bool rs = User.ValidateLastName();
+            bool rs = User.ValidateEmail();
             Console.WriteLine(rs);
         }
     }
