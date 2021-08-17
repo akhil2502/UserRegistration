@@ -31,11 +31,20 @@ namespace UserRegistration
         {
             Regex regex = new Regex(MOBILE);
             return regex.IsMatch("91 8967904554");
-        }
-        public static bool PasswordR1()
-        {
-            Regex regex = new Regex(PASSWORD_R1);
-            return regex.IsMatch("FSxyb302");
+            public static bool PasswordR1()
+            {
+                Regex regex = new Regex(PASSWORD_R1);
+                return regex.IsMatch("FSxyb302");
+            }
+            public static bool PasswordR2()
+            {
+                Regex regex = new Regex(PASSWORD_R2);
+                return regex.IsMatch("abXyb302");
+            }
+            public static bool PasswordR3()
+            {
+                Regex regex = new Regex(PASSWORD_R3);
+                return regex.IsMatch("akXybxy3");
+            }
         }
     }
-}
