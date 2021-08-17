@@ -14,12 +14,12 @@ namespace UserRegistration
         public static bool ValidateFirstName()
         {
             Regex regex = new Regex(FIRST_NAME);
-            return regex.IsMatch("akhil");
+            return regex.IsMatch("valluru");
         }
         public static bool ValidateLastName()
         {
             Regex regex = new Regex(LAST_NAME);
-            return regex.IsMatch("valluru");
+            return regex.IsMatch("akhil");
         }
         public static bool ValidateEmail()
         {
@@ -30,12 +30,16 @@ namespace UserRegistration
             bool ValidatePhone()
         {
             Regex regex = new Regex(MOBILE);
-            return regex.IsMatch("91 8967904554");
-        }
-        public static bool PasswordR1()
-        {
-            Regex regex = new Regex(PASSWORD_R1);
-            return regex.IsMatch("FSxyb302");
+            return regex.IsMatch("91 8975648879");
+            public static bool PasswordR1()
+            {
+                Regex regex = new Regex(PASSWORD_R1);
+                return regex.IsMatch("FSxyb302");
+            }
+            public static bool PasswordR2()
+            {
+                Regex regex = new Regex(PASSWORD_R2);
+                return regex.IsMatch("abXyb302");
+            }
         }
     }
-}
